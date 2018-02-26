@@ -1,0 +1,16 @@
+{
+    "name": "ruslan/validator",
+    "description": "JSON validator",
+    "type": "project",
+    "require": {
+        "justinrainbow/json-schema": "^5.2",
+        "swaggest/json-schema": "^0.10.1"
+    },
+    "authors": [
+        {
+            "name": "Medynskyi",
+            "email": "medinskiy92@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

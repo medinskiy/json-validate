@@ -1,0 +1,29 @@
+{
+  "firstName": "Ruslan",
+  "lastName": "Medynskyi",
+  "age": 25,
+  "email": "asd@ere.ff",
+  "address": {
+    "country": "UA",
+    "locality": {
+      "name": "Kyiv"
+    },
+    "street": "Shevchenka, 20",
+    "flat": 20
+  },
+  "education": [
+    {
+      "name": "Technical Scholl",
+      "level": "specialist",
+      "start": 2007,
+      "end": 2011
+    },
+    {
+      "name": "NTUU \"KPI\"",
+      "level": "master",
+      "start": 2011,
+      "end": 2017
+    }
+  ]
+}
+

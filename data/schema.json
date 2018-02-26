@@ -1,0 +1,47 @@
+{
+  "type": "object",
+
+  "properties": {
+    "firstName": {
+      "$ref": "#/definitions/stringVal"
+    },
+    "lastName": {
+      "$ref": "#/definitions/stringVal"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 100
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "address": {
+      "$ref": "./data/address.json"
+    },
+    "education": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "properties": {
+          "name": { "type": "string" },
+          "level": {
+            "enum": ["specialist", "bachelor", "master"]
+          },
+          "start": { "type": "number" },
+          "end": { "type": "number" }
+        },
+        "required": ["name", "level", "start", "end"]
+      }
+    }
+  },
+
+  "definitions": {
+    "stringVal": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 40
+    }
+  }
+}
